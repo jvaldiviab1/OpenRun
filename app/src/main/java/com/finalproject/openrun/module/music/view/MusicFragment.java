@@ -11,8 +11,10 @@ import androidx.fragment.app.Fragment;
 
 import com.finalproject.openrun.R;
 import com.finalproject.openrun.module.base.BaseFragment;
+import com.finalproject.openrun.module.music.MusicContract;
+import com.finalproject.openrun.module.music.model.Song;
 
-public class MusicFragment extends BaseFragment {
+public class MusicFragment extends BaseFragment implements MusicContract.View {
 
    // private HomeViewModel homeViewModel;
 
@@ -23,5 +25,25 @@ public class MusicFragment extends BaseFragment {
         final TextView textView = root.findViewById(R.id.text_home);
 
         return root;
+    }
+
+    @Override
+    public void showLoadding() {
+
+    }
+
+    @Override
+    public void stopLoading() {
+
+    }
+
+    @Override
+    public void updateSongState() {
+
+    }
+
+    @Override
+    public void onSongClick(Song song, Boolean isPlaying) {
+
     }
 }
