@@ -19,10 +19,9 @@ public class BottomActivityMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
         // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        // menu should be considered as top level destinations.00
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_music, R.id.navigation_statistics, R.id.navigation_todos)
                 .build();

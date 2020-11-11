@@ -3,9 +3,6 @@
     package="com.finalproject.openrun">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <uses-feature android:name="android.hardware.type.watch" />
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,33 +11,15 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_twister"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <uses-library
-            android:name="com.google.android.wearable"
-            android:required="true" />
+        android:theme="@style/Theme.AppCompat">
 
-        <!--
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
-        -->
-        <meta-data
-            android:name="com.google.android.wearable.standalone"
-            android:value="true" />
-
-        <activity
-            android:name="com.finalproject.TemporalActivity"
-            android:label="@string/title_activity_temporal">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".module.BottomActivityMain"
             android:label="@string/title_activity_bottom_main" />
-        <activity android:name=".module.login.view.LoginActivity" />
-        <activity android:name=".module.SplashActivity">
+        <activity android:name=".module.login.view.LoginActivity"
+            android:theme="@style/LoginTheme"/>
+        <activity android:name=".module.SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

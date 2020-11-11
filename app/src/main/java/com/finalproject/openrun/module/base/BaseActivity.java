@@ -30,13 +30,11 @@ public abstract class BaseActivity extends AppCompatActivity implements Base {
 
     @Override
     public void showLoadingScreen() {
-        ProgressBar progressBar = findViewById(R.id.progress_bar);
-        progressBar.setVisibility(View.VISIBLE);
+
     }
 
     @Override
     public void hideLoadingScreen() {
-        ProgressBar progressBar = findViewById(R.id.progress_bar);
-        progressBar.setVisibility(View.GONE);
+
     }
 }
