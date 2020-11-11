@@ -1,4 +1,4 @@
-package com.finalproject.openrun.module.music;
+package com.finalproject.openrun.module.music.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
