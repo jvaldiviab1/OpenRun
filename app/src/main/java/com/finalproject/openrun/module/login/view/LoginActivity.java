@@ -63,14 +63,13 @@ public class LoginActivity extends BaseActivity implements LoginContract.View, V
 
     @Override
     public void onLoginSuccess(String message) {
-        hideLoadingScreen();
+
         IsEmailVerified();
     }
 
     @Override
     public void onLoginFailure(String message) {
-        hideLoadingScreen();
-        onError(message);
+
     }
 
     private void IsEmailVerified() {

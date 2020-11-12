@@ -7,16 +7,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 
 import com.finalproject.openrun.R;
 import com.finalproject.openrun.module.base.BaseFragment;
 import com.finalproject.openrun.module.music.MusicContract;
 import com.finalproject.openrun.module.music.model.Song;
+import com.finalproject.openrun.module.music.presenter.MusicPresenter;
 
 public class MusicFragment extends BaseFragment implements MusicContract.View {
 
-   // private HomeViewModel homeViewModel;
+    private MusicPresenter mMusicPresenter;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 

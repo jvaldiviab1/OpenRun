@@ -9,4 +9,16 @@ public interface MusicContract {
         void updateSongState();
         void onSongClick(Song song, Boolean isPlaying);
     }
+
+    interface Presenter{
+
+    }
+
+    interface Interactor{
+
+    }
+
+    interface onMusicListener{
+
+    }
 }
