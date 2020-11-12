@@ -15,7 +15,8 @@
 
         <activity
             android:name=".module.BottomActivityMain"
-            android:label="@string/title_activity_bottom_main" />
+            android:label="@string/title_activity_bottom_main"
+            android:theme="@style/Theme.MaterialComponents.Light"/>
         <activity android:name=".module.login.view.LoginActivity"
             android:theme="@style/LoginTheme"/>
         <activity android:name=".module.SplashActivity"
