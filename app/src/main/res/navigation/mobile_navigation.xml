@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_todos"
-        android:name="com.finalproject.openrun.module.todos.TodosFragment"
+        android:name="com.finalproject.openrun.module.todos.view.TodosFragment"
         android:label="@string/title_todos"
         tools:layout="@layout/fragment_todos" />
     <fragment
