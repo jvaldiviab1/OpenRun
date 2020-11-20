@@ -10,8 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.finalproject.openrun.R;
+import com.finalproject.openrun.module.GeneralFragment;
 
-public class StatisticsFragment extends Fragment {
+public class StatisticsFragment extends GeneralFragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_statistics, container, false);
