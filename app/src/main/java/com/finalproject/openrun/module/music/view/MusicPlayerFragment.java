@@ -7,16 +7,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.finalproject.openrun.R;
-import com.finalproject.openrun.module.base.BaseFragment;
-import com.finalproject.openrun.module.music.MusicContract;
-import com.finalproject.openrun.module.music.model.Song;
-import com.finalproject.openrun.module.music.presenter.MusicPresenter;
+import com.finalproject.openrun.module.music.data.model.Song;
+import com.finalproject.openrun.module.music.viewmodel.MusicPlayerViewModel;
 
-public class MusicFragment extends BaseFragment implements MusicContract.View {
+public class MusicPlayerFragment extends Fragment {
 
-    private MusicPresenter mMusicPresenter;
+    public static final String TAG_FRAGMENT_MUSIC_BAR = "tag_fragment_music_bar";
+    public static final String TAG_MUSIC_PLAYER_VIEW_PAGER = "tag_music_player_view_pager";
+    public static final String STORAGE_PERMISSION = "android.permission.READ_EXTERNAL_STORAGE";
+    private static final int REQUEST_READ_STORAGE = 10002;
+
+    private MusicPlayerViewModel viewModel;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -27,23 +32,4 @@ public class MusicFragment extends BaseFragment implements MusicContract.View {
         return root;
     }
 
-    @Override
-    public void showLoadding() {
-
-    }
-
-    @Override
-    public void stopLoading() {
-
-    }
-
-    @Override
-    public void updateSongState() {
-
-    }
-
-    @Override
-    public void onSongClick(Song song, Boolean isPlaying) {
-
-    }
 }

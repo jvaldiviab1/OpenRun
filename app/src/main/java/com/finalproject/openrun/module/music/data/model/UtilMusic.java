@@ -1,4 +1,4 @@
-package com.finalproject.openrun.module.music.model;
+package com.finalproject.openrun.module.music.data.model;
 
 public class UtilMusic {
     public String timeMillisTimes(Long duration){

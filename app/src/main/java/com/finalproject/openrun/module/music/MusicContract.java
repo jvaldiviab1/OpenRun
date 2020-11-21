@@ -1,6 +1,6 @@
 package com.finalproject.openrun.module.music;
 
-import com.finalproject.openrun.module.music.model.Song;
+import com.finalproject.openrun.module.music.data.model.Song;
 
 public interface MusicContract {
     interface View{
