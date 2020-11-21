@@ -62,12 +62,12 @@ public class MusicPlayerNotification {
 
     public void buildNotification() {
 
-        // Get Data
         Song playingSong = musicPlayer.getPlayingSong().getValue();
         String title = playingSong.getSongTitle();
         String artist = playingSong.getArtistName();
         Uri coverUri = playingSong.getImagePath();
-        // Open image
+
+        
         Bitmap trackCover;
         try {
             trackCover = MediaStore.Images.Media.getBitmap(context.getContentResolver(), coverUri);
