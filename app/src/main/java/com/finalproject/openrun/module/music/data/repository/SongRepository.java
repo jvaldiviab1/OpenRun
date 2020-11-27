@@ -28,8 +28,8 @@ public class SongRepository {
 
     private List<Song> shuffleSongs;
 
-    private MutableLiveData<Boolean> isShuffleMode = new MutableLiveData<>();
-    private MutableLiveData<Boolean> isRepeatingMode = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> isShuffleMode = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> isRepeatingMode = new MutableLiveData<>();
 
     public void setAllSongs(List<Song> allSongs){
         this.allSongs = allSongs;

@@ -7,10 +7,10 @@ import com.finalproject.openrun.module.todos.TodosInteractor;
 
 public class TodosPresenter implements TodosContract.Presenter {
 
-    private String TAG = "TodosPresenter";
+    private final String TAG = "TodosPresenter";
 
-    private TodosContract.View mTodosView;
-    private TodosInteractor mTodosInteractor;
+    private final TodosContract.View mTodosView;
+    private final TodosInteractor mTodosInteractor;
 
     public TodosPresenter(TodosContract.View mTodosView){
         this.mTodosView = mTodosView;

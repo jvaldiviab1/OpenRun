@@ -35,7 +35,7 @@ public class MusicPlayerNotification {
     private MusicPlayerNotification() {
     }
 
-    private MusicPlayer musicPlayer = MusicPlayer.getInstance();
+    private final MusicPlayer musicPlayer = MusicPlayer.getInstance();
 
     private Context context;
     private NotificationManager notificationManager;

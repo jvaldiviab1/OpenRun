@@ -7,7 +7,7 @@ import java.util.Observer;
 
 public class BaseSongActivity extends BaseActivity implements Observer {
 
-    private int REQUEST_WRITE__EXTERNAL_STORAGE = 10;
+    private final int REQUEST_WRITE__EXTERNAL_STORAGE = 10;
 
 
     @Override

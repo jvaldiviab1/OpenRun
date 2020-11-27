@@ -3,6 +3,8 @@
     package="com.finalproject.openrun">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,13 +15,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
 
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".module.todos.view.PopUpActivity"
+            android:theme="@style/PopUpTheme"
+            android:label="@string/title_activity_pop_up">
+        </activity>
         <activity
             android:name=".module.BottomActivityMain"
             android:label="@string/title_activity_bottom_main"
-            android:theme="@style/Theme.MaterialComponents.Light"/>
-        <activity android:name=".module.login.view.LoginActivity"
-            android:theme="@style/LoginTheme"/>
-        <activity android:name=".module.SplashActivity"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".module.login.view.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".module.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

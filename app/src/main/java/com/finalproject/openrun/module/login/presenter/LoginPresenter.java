@@ -7,10 +7,10 @@ import com.finalproject.openrun.module.login.LoginInteractor;
 
 public class LoginPresenter implements LoginContract.Presenter, LoginContract.onLoginListener {
 
-    private String TAG = "LoginPresenter";
+    private final String TAG = "LoginPresenter";
 
-    private LoginContract.View mLoginView;
-    private LoginInteractor mLoginInteractor;
+    private final LoginContract.View mLoginView;
+    private final LoginInteractor mLoginInteractor;
 
     public LoginPresenter(LoginContract.View mLoginView){
         this.mLoginView = mLoginView;

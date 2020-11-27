@@ -15,8 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginInteractor implements LoginContract.Intractor{
 
-    private String TAG = "LoginPresenter";
-    private LoginContract.onLoginListener mOnLoginListener;
+    private final String TAG = "LoginPresenter";
+    private final LoginContract.onLoginListener mOnLoginListener;
 
     public LoginInteractor(LoginContract.onLoginListener onLoginListener){
         this.mOnLoginListener = onLoginListener;

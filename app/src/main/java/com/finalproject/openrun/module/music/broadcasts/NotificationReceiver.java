@@ -21,7 +21,7 @@ public class NotificationReceiver extends BroadcastReceiver {
 
     private Context context;
 
-    private MusicPlayer musicPlayer = MusicPlayer.getInstance();
+    private final MusicPlayer musicPlayer = MusicPlayer.getInstance();
 
     @Override
     public void onReceive(Context context, Intent intent) {

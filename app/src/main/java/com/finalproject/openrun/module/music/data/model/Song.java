@@ -6,15 +6,15 @@ import java.util.Date;
 
 public class Song {
 
-    private long songId;
-    private String songTitle;
-    private String albumName;
-    private String artistName;
-    private Uri imagePath;
+    private final long songId;
+    private final String songTitle;
+    private final String albumName;
+    private final String artistName;
+    private final Uri imagePath;
 
-    private int songLength;
-    private Date lastModified;
-    private int songPlayCount;
+    private final int songLength;
+    private final Date lastModified;
+    private final int songPlayCount;
 
     private int index;
 

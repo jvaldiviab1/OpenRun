@@ -32,10 +32,10 @@ public class MusicPlayer {
         return instance;
     }
 
-    private MutableLiveData<MediaPlayer> mediaPlayer = new MutableLiveData<>();
-    private MutableLiveData<Boolean> isPlaying = new MutableLiveData<>();
-    private MutableLiveData<Song> playingSong = new MutableLiveData<>();
-    private MutableLiveData<List<Song>> playingList = new MutableLiveData<>();
+    private final MutableLiveData<MediaPlayer> mediaPlayer = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> isPlaying = new MutableLiveData<>();
+    private final MutableLiveData<Song> playingSong = new MutableLiveData<>();
+    private final MutableLiveData<List<Song>> playingList = new MutableLiveData<>();
 
     private Context playingContext;
 

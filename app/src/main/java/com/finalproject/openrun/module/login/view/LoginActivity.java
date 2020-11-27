@@ -51,7 +51,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View, V
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnLogin:
-                initLogin(String.valueOf(mEtEmail.getText().toString()),String.valueOf(mEtPassword.getText().toString()));
+                initLogin(mEtEmail.getText().toString(), mEtPassword.getText().toString());
                 break;
         }
     }
